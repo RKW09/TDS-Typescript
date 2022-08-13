@@ -1,4 +1,5 @@
-/* Exercício 2f - Procurar Valor no Vetor */
+/* Exercício 2f - Criar uma Função para Procurar Valor no Array não importando a ordem em que os elementos estão distribuídos. 
+Deve retornar o índice do elemento ou -1 caso não o encontre */
 
 let arrayNumeros: Array<number> = [1, 2, 20, 17, 4, 87, 1, 8, 9, 35, 1, 15, 14, 90, 85, 34, 37, 27, 1]
 let valor: number = 1;
