@@ -3,9 +3,9 @@
 let arrayNumeros: Array<number> = [1, 2, 20, 17, 4, 87, 1, 8, 9, 35, 1, 15, 14, 90, 85, 34, 37, 27, 1]
 let valor: number = 1;
 
-console.log("Numero para Pesquisar: " + valor + " " + ProcurarValorNoVetor(valor, arrayNumeros));
+console.log("Numero para Pesquisar: " + valor + " " + procurarValorNoVetor(valor, arrayNumeros));
 
-function ProcurarValorNoVetor(valor: number, arrayProcurar: Array<number>) : Array<string>
+function procurarValorNoVetor(valor: number, arrayProcurar: Array<number>) : Array<string>
 {
     let encontrou: boolean = false;
     let indicesEncontrados: Array<string> = [];
