@@ -1,3 +1,6 @@
+//Usei o Typescript Playground para criar esse Script que gera Objetos de uma Classe Pessoa que possuem os Atributos: Nome(com Sobrenome) e CPF 
+//para popular esses dados em um outro exercício no curso (Não tenho muita criatividade para inventar nomes de pessoas para usar nos exercicios)
+
 console.clear();
 
 //Nomes e Sobrenomes Mais Comuns do Brasil
