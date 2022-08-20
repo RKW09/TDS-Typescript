@@ -82,7 +82,6 @@ class Pessoa
 
         if(digitosIguais == 11)
         {
-            //console.log(digitosIguais);
             return this.gerarCPF();
         }
         else
@@ -94,6 +93,15 @@ class Pessoa
             cpfMascarado += cpf.slice(6, 9);
             cpfMascarado += "-";
             cpfMascarado += cpf.slice(9, cpf.length);
+
+            //Se por um acaso do destino for gerado um cpf igual a um já atribuído a alguma pessoa no array pessoas, chamar a função novamente para gerar outro
+            for(let i: number = 0; i < pessoas.length; i++)
+            {
+                if(pessoas[i].cpf == cpfMascarado)
+                {
+                    return this.gerarCPF();
+                }
+            }
 
             return cpfMascarado;
         }
@@ -126,12 +134,7 @@ let pessoas: Array<Pessoa> = [];
 //Quantidade de Objetos Para Criar
 let quantidadePessoasParaCriar: number = 10;
 
+//Chamando as Funções da Classe para Criar Pessoa e Listar as Pessoas Criadas
 pessoa.criarPessoa(quantidadePessoasParaCriar);
 pessoa.exibirPessoasCriadas();
-
-
-
-
-
-
 
