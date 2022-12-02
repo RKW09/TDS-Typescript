@@ -82,7 +82,7 @@ class Twitter
             this.createUser(userId);
         }
 
-		let posUsuario: number = this.getUserIndex(userId);
+	let posUsuario: number = this.getUserIndex(userId);
 
         let ids: Array<number> = [this.users[posUsuario].id];
 
